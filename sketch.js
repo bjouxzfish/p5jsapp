@@ -609,7 +609,7 @@ function randomNewClue() {
         "left": "unpopular opinion",
         "right": "popular opinion"
     }
-]
+];
   return wordlist[
     Math.floor(Math.random() * wordlist.length)];
 }
