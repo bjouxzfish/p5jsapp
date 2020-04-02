@@ -63,32 +63,27 @@ function setup() {
 }
 
 function resetGame() {
-  print("randomizeTargetPosition");
   initial_indicator_position = Math.round(random(-1, max_slots-1));
   less_alpha = 50;
   more_alpha = 50;
 }
 
 function opponentPickHigher() {
-  print("opponentPickHigher");
   less_alpha = 0;
   more_alpha = 255;
 }
 
 function opponentPickLower() {
-  print("opponentPickLower");
   less_alpha = 255;
   more_alpha = 0;
 }
 
 function closeLid() {
   lid_alpha = 255;
-  print("closeLid");
 }
 
 function openLid() {
   lid_alpha = 0;
-  print("openLid");
 }
 
 function getNewClue() {
