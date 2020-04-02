@@ -6,6 +6,8 @@ let button_open_cover;
 let button_new_clue;
 let button_opponent_less;
 let button_opponent_more;
+var wordlist;
+
 
 function setup() {
 
@@ -234,7 +236,380 @@ function drawArrow(base, vec, myColor) {
 }
 
 function randomNewClue() {
-  var clueOptions = loadJSON('assets/wordlist.json');
-  return clueOptions[
-    Math.floor(Math.random() * clueOptions.length)];
+  var wordlist = [
+    {
+        "left": "cheap",
+        "right": "expensive"
+    },
+    {
+        "left": "art house film",
+        "right": "blockbuster"
+    },
+    {
+        "left": "casual",
+        "right": "formal"
+    },
+    {
+        "left": "cold",
+        "right": "hot"
+    },
+    {
+        "left": "light",
+        "right": "heavy"
+    },
+    {
+        "left": "lazy",
+        "right": "active"
+    },
+    {
+        "left": "amateur",
+        "right": "professional"
+    },
+    {
+        "left": "boring activity",
+        "right": "exciting activity"
+    },
+    {
+        "left": "artificial",
+        "right": "natural"
+    },
+    {
+        "left": "awful",
+        "right": "pleasant"
+    },
+    {
+        "left": "dictatorship",
+        "right": "democracy"
+    },
+    {
+        "left": "easy",
+        "right": "difficult"
+    },
+    {
+        "left": "clean",
+        "right": "dirty"
+    },
+    {
+        "left": "foreign",
+        "right": "domestic"
+    },
+    {
+        "left": "little",
+        "right": "big"
+    },
+    {
+        "left": "drama",
+        "right": "comedy"
+    },
+    {
+        "left": "safe",
+        "right": "dangerous"
+    },
+    {
+        "left": "moderate",
+        "right": "extreme"
+    },
+    {
+        "left": "few",
+        "right": "many"
+    },
+    {
+        "left": "occasionally",
+        "right": "frequently"
+    },
+    {
+        "left": "stale",
+        "right": "fresh"
+    },
+    {
+        "left": "serious",
+        "right": "funny"
+    },
+    {
+        "left": "empty",
+        "right": "full"
+    },
+    {
+        "left": "fiction",
+        "right": "fact"
+    },
+    {
+        "left": "rough",
+        "right": "smooth"
+    },
+    {
+        "left": "repulsive",
+        "right": "attractive"
+    },
+    {
+        "left": "rare gift",
+        "right": "common gift"
+    },
+    {
+        "left": "pessimist",
+        "right": "optimist"
+    },
+    {
+        "left": "opaque",
+        "right": "clear"
+    },
+    {
+        "left": "dinner",
+        "right": "breakfast"
+    },
+    {
+        "left": "a cat's name",
+        "right": "a dog's name"
+    },
+    {
+        "left": "slow",
+        "right": "fast"
+    },
+    {
+        "left": "seldom consumed",
+        "right": "frequently consumed"
+    },
+    {
+        "left": "trivial",
+        "right": "important"
+    },
+    {
+        "left": "illegal",
+        "right": "lawful"
+    },
+    {
+        "left": "quiet",
+        "right": "noisy"
+    },
+    {
+        "left": "messy",
+        "right": "neat"
+    },
+    {
+        "left": "one-hit wonder",
+        "right": "world best-seller"
+    },
+    {
+        "left": "scarce",
+        "right": "plentiful"
+    },
+    {
+        "left": "private",
+        "right": "public"
+    },
+    {
+        "left": "crooked",
+        "right": "straight"
+    },
+    {
+        "left": "failure",
+        "right": "success"
+    },
+    {
+        "left": "a voluntary act",
+        "right": "a compulsory act"
+    },
+    {
+        "left": "80s",
+        "right": "90s"
+    },
+    {
+        "left": "Danger job",
+        "right": "Safe job"
+    },
+    {
+        "left": "smells bad",
+        "right": "smells good"
+    },
+    {
+        "left": "bad habit",
+        "right": "good habit"
+    },
+    {
+        "left": "historically unimportant",
+        "right": "historically important"
+    },
+    {
+        "left": "guilty pleasure",
+        "right": "openly love"
+    },
+    {
+        "left": "round",
+        "right": "pointy"
+    },
+    {
+        "left": "dark",
+        "right": "light"
+    },
+    {
+        "left": "inflexible",
+        "right": "flexible"
+    },
+    {
+        "left": "useless invention",
+        "right": "useful invention"
+    },
+    {
+        "left": "ugly man",
+        "right": "beautiful man"
+    },
+    {
+        "left": "low quality",
+        "right": "high quality"
+    },
+    {
+        "left": "underrated skill",
+        "right": "overrated skill"
+    },
+    {
+        "left": "bad person",
+        "right": "good person"
+    },
+    {
+        "left": "normal thing to own",
+        "right": "weird thing to own"
+    },
+    {
+        "left": "requires luck",
+        "right": "requires skill"
+    },
+    {
+        "left": "underrated",
+        "right": "overrated"
+    },
+    {
+        "left": "unpopular",
+        "right": "popular"
+    },
+    {
+        "left": "bad ice-cream toppings",
+        "right": "good ice-cream toppings"
+    },
+    {
+        "left": "bad pizza toppings",
+        "right": "good pizza toppings"
+    },
+    {
+        "left": "old-fashion",
+        "right": "contemporary"
+    },
+    {
+        "left": "salty",
+        "right": "sweet"
+    },
+    {
+        "left": "unacceptable reason to be late",
+        "right": "acceptable reason to be late"
+    },
+    {
+        "left": "summer",
+        "right": "winter"
+    },
+    {
+        "left": "unhealthy food",
+        "right": "healthy food"
+    },
+    {
+        "left": "uncommon hobby",
+        "right": "common hobby"
+    },
+    {
+        "left": "religious",
+        "right": "secular"
+    },
+    {
+        "left": "useless major",
+        "right": "practical major"
+    },
+    {
+        "left": "easy activity",
+        "right": "strenous activity"
+    },
+    {
+        "left": "weak",
+        "right": "strong"
+    },
+    {
+        "left": "TV show with bad ending",
+        "right": "TV show with good ending"
+    },
+    {
+        "left": "bad children's book",
+        "right": "good children's book"
+    },
+    {
+        "left": "divided",
+        "right": "whole"
+    },
+    {
+        "left": "wet",
+        "right": "dry"
+    },
+    {
+        "left": "romantic movie",
+        "right": "adventure movie"
+    },
+    {
+        "left": "unforgivable",
+        "right": "forgivable"
+    },
+    {
+        "left": "stupid",
+        "right": "brilliant"
+    },
+    {
+        "left": "geek",
+        "right": "dork"
+    },
+    {
+        "left": "poorly made",
+        "right": "well made"
+    },
+    {
+        "left": "unknown park",
+        "right": "famous park"
+    },
+    {
+        "left": "forbidden",
+        "right": "encouraged"
+    },
+    {
+        "left": "nature",
+        "right": "nurture"
+    },
+    {
+        "left": "least evil company",
+        "right": "most evil company"
+    },
+    {
+        "left": "low calorie",
+        "right": "high calorie"
+    },
+    {
+        "left": "out of control",
+        "right": "in control"
+    },
+    {
+        "left": "easy subject",
+        "right": "hard subject"
+    },
+    {
+        "left": "apolotical",
+        "right": "political"
+    },
+    {
+        "left": "hard to clean",
+        "right": "easy to clean"
+    },
+    {
+        "left": "bad actor",
+        "right": "good actor"
+    },
+    {
+        "left": "unpopular opinion",
+        "right": "popular opinion"
+    }
+]
+  return wordlist[
+    Math.floor(Math.random() * wordlist.length)];
 }
