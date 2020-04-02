@@ -11,7 +11,10 @@ var wordlist;
 
 function setup() {
 
-  createCanvas(800, 520);
+  var canvas = createCanvas(800, 580);
+  // Move the canvas so it’s inside our <div id="sketch-holder">.
+  canvas.parent('sketch-holder');
+
   resetGame();
   getNewClue();
   closeLid();
@@ -20,39 +23,48 @@ function setup() {
   textSize(default_fontsize);
   textAlign(CENTER, CENTER);
 
-  slider = createSlider(-179, -1, -90);
-  slider.position(300, 520);
+  slider = createSlider(-179, -1, -179);
+  slider.position(300, 530);
   slider.style('width', '200px');
 
   var button_reset = createButton('New Game');
   button_reset.position(30, 30);
   button_reset.mousePressed(resetGame);
+  button_reset.style('font-size', '20px');
 
   var button_close_cover = createButton('Close Lid');
   button_close_cover.position(30, 80);
   button_close_cover.mousePressed(closeLid);
+  button_close_cover.style('font-size', '20px');
 
   var button_open_cover = createButton('Open Lid');
   button_open_cover.position(30, 130);
   button_open_cover.mousePressed(openLid);
+  button_open_cover.style('font-size', '20px');
 
   var button_new_clue = createButton('New Clue');
-  button_new_clue.position(140, 30);
+  button_new_clue.position(160, 30);
   button_new_clue.mousePressed(getNewClue);
+  button_new_clue.style('font-size', '20px');
 
 
   var button_opponent_less = createButton('Lower');
-  button_opponent_less.position(620, 50);
+  var opponent_button_col = color(255, 105, 180, 50);
+  button_opponent_less.position(610, 50);
   button_opponent_less.mousePressed(opponentPickLower);
+  button_opponent_less.style('font-size', '19px');
+  button_opponent_less.style('background-color', opponent_button_col);
 
   var button_opponent_more = createButton('Higher');
   button_opponent_more.position(700, 50);
   button_opponent_more.mousePressed(opponentPickHigher);
+  button_opponent_more.style('font-size', '19px');
+  button_opponent_more.style('background-color', opponent_button_col);
 }
 
 function resetGame() {
   print("randomizeTargetPosition");
-  initial_indicator_position = Math.round(random(-1, max_slots));
+  initial_indicator_position = Math.round(random(-1, max_slots-1));
   less_alpha = 50;
   more_alpha = 50;
 }
@@ -80,7 +92,6 @@ function openLid() {
 }
 
 function getNewClue() {
-
   var wordPair = randomNewClue();
   current_left_word = wordPair.left;
   current_right_word = wordPair.right;
@@ -93,7 +104,7 @@ function draw() {
   fill('black');
   noStroke();
   text("Opponent's choice", 680, 30);
-  text("Current team's choice", 400, 512);
+  text("Current team's choice", 400, 520);
   drawGameBoard();
 
   //drawIndicators(0);
@@ -110,7 +121,6 @@ function draw() {
   drawOpponentsPick(less_alpha, more_alpha);
 
 }
-
 
 function drawGameBoard() {
   // Draw the back cover600
@@ -191,32 +201,49 @@ function drawOpponentsPick(less_alpha, more_alpha) {
 
 }
 
+
 function drawIndicators(x) {
+  let target_slice_angle = 0.12;
   let mid_point = x * PI / max_slots;
   // Mid
   noStroke();
   fill(255, 127, 80);
-  arc(400, 400, 600, 600, PI + mid_point, PI + mid_point + 0.1, PIE);
+  arc(400, 400, 600, 600, 
+    PI + mid_point, 
+    PI + mid_point + target_slice_angle, 
+    PIE);
 
   // Right green
   noStroke();
   fill(64, 224, 208);
-  arc(400, 400, 600, 600, PI + mid_point + 0.1, PI + mid_point + 0.2, PIE);
+  arc(400, 400, 600, 600, 
+    PI + mid_point + target_slice_angle, 
+    PI + mid_point + 2*target_slice_angle, 
+    PIE);
 
   // Left green
   noStroke();
   fill(64, 224, 208);
-  arc(400, 400, 600, 600, PI + mid_point - 0.1, PI + mid_point, PIE);
+  arc(400, 400, 600, 600, 
+    PI + mid_point - target_slice_angle, 
+    PI + mid_point, 
+    PIE);
 
   // Right orange
   noStroke();
   fill(255, 165, 0);
-  arc(400, 400, 600, 600, PI + mid_point + 0.2, PI + mid_point + 0.3, PIE);
+  arc(400, 400, 600, 600, 
+    PI + mid_point + 2*target_slice_angle, 
+    PI + mid_point + 3*target_slice_angle, 
+    PIE);
 
   // Left orange
   noStroke();
   fill(255, 165, 0);
-  arc(400, 400, 600, 600, PI + mid_point - 0.2, PI + mid_point - 0.1, PIE);
+  arc(400, 400, 600, 600, 
+    PI + mid_point - 2*target_slice_angle, 
+    PI + mid_point - target_slice_angle, 
+    PIE);
 }
 
 
