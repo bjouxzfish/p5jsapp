@@ -29,24 +29,24 @@ function setup() {
   button_reset.mousePressed(resetGame);
 
   var button_close_cover = createButton('Close Lid');
-  button_close_cover.position(30, 60);
+  button_close_cover.position(30, 80);
   button_close_cover.mousePressed(closeLid);
 
   var button_open_cover = createButton('Open Lid');
-  button_open_cover.position(30, 90);
+  button_open_cover.position(30, 130);
   button_open_cover.mousePressed(openLid);
 
   var button_new_clue = createButton('New Clue');
-  button_new_clue.position(120, 30);
+  button_new_clue.position(140, 30);
   button_new_clue.mousePressed(getNewClue);
 
 
   var button_opponent_less = createButton('Lower');
-  button_opponent_less.position(630, 70);
+  button_opponent_less.position(620, 50);
   button_opponent_less.mousePressed(opponentPickLower);
 
   var button_opponent_more = createButton('Higher');
-  button_opponent_more.position(700, 70);
+  button_opponent_more.position(700, 50);
   button_opponent_more.mousePressed(opponentPickHigher);
 }
 
@@ -92,7 +92,7 @@ function draw() {
 
   fill('black');
   noStroke();
-  text("Opponent's choice", 700, 50);
+  text("Opponent's choice", 680, 30);
   text("Current team's choice", 400, 512);
   drawGameBoard();
 
@@ -609,7 +609,7 @@ function randomNewClue() {
         "left": "unpopular opinion",
         "right": "popular opinion"
     }
-];
+  ];
   return wordlist[
     Math.floor(Math.random() * wordlist.length)];
 }
