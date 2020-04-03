@@ -27,25 +27,27 @@ function setup() {
   textSize(default_fontsize);
   textAlign(CENTER, CENTER);
 
-  button_reset = createButton('New Game');
+  let buttonFontSize = '18px';
+
+  button_reset = createButton('New Game (n)');
   button_reset.position(30, 30);
   button_reset.mousePressed(resetGame);
-  button_reset.style('font-size', '20px');
+  button_reset.style('font-size', buttonFontSize);
 
-  button_close_cover = createButton('Close Lid');
+  button_close_cover = createButton('Close Lid (c)');
   button_close_cover.position(30, 80);
   button_close_cover.mousePressed(closeLid);
-  button_close_cover.style('font-size', '20px');
+  button_close_cover.style('font-size', buttonFontSize);
 
-  button_open_cover = createButton('Open Lid');
+  button_open_cover = createButton('Open Lid (a)');
   button_open_cover.position(30, 130);
   button_open_cover.mousePressed(openLid);
-  button_open_cover.style('font-size', '20px');
+  button_open_cover.style('font-size', buttonFontSize);
 
-  button_new_clue = createButton('New Clue');
-  button_new_clue.position(160, 30);
+  button_new_clue = createButton('New Clue (k)');
+  button_new_clue.position(180, 30);
   button_new_clue.mousePressed(getNewClue);
-  button_new_clue.style('font-size', '20px');
+  button_new_clue.style('font-size', buttonFontSize);
 
 
   button_opponent_less = createButton('Lower');
@@ -242,7 +244,6 @@ function drawIndicators(x) {
     PIE);
 }
 
-
 function drawArrow(base, vec, myColor) {
   // draw an arrow for a vector at a given base position
   push();
@@ -257,6 +258,20 @@ function drawArrow(base, vec, myColor) {
   triangle(0, arrowSize / 2, 0, -arrowSize / 2, arrowSize, 0);
   pop();
 }
+
+function keyTyped() {
+    if (key === 'a') {
+      openLid();
+    } else if (key === 'c') {
+      closeLid();
+    } else if (key === 'n') {
+      resetGame();
+    } else if (key === 'k') {
+      getNewClue();
+    }
+    // uncomment to prevent any default behavior
+    // return false;
+  }
 
 function randomNewClue() {
   var wordlist = [
