@@ -1,12 +1,12 @@
-let default_fontsize = 18;
-let max_slots = 30;
-let button_reset;
-let button_close_cover;
-let button_open_cover;
-let button_new_clue;
-let button_opponent_less;
-let button_opponent_more;
-var wordlist;
+var default_fontsize = 18;
+var max_slots = 30;
+var button_reset;
+var button_close_cover;
+var button_open_cover;
+var button_new_clue;
+var button_opponent_less;
+var button_opponent_more;
+var slider;
 
 
 function setup() {
@@ -14,6 +14,10 @@ function setup() {
   var canvas = createCanvas(800, 580);
   // Move the canvas so it’s inside our <div id="sketch-holder">.
   canvas.parent('sketch-holder');
+
+  slider = createSlider(-179, -1, -179);
+  slider.position(300, 530);
+  slider.style('width', '200px');
 
   resetGame();
   getNewClue();
@@ -23,39 +27,35 @@ function setup() {
   textSize(default_fontsize);
   textAlign(CENTER, CENTER);
 
-  slider = createSlider(-179, -1, -179);
-  slider.position(300, 530);
-  slider.style('width', '200px');
-
-  var button_reset = createButton('New Game');
+  button_reset = createButton('New Game');
   button_reset.position(30, 30);
   button_reset.mousePressed(resetGame);
   button_reset.style('font-size', '20px');
 
-  var button_close_cover = createButton('Close Lid');
+  button_close_cover = createButton('Close Lid');
   button_close_cover.position(30, 80);
   button_close_cover.mousePressed(closeLid);
   button_close_cover.style('font-size', '20px');
 
-  var button_open_cover = createButton('Open Lid');
+  button_open_cover = createButton('Open Lid');
   button_open_cover.position(30, 130);
   button_open_cover.mousePressed(openLid);
   button_open_cover.style('font-size', '20px');
 
-  var button_new_clue = createButton('New Clue');
+  button_new_clue = createButton('New Clue');
   button_new_clue.position(160, 30);
   button_new_clue.mousePressed(getNewClue);
   button_new_clue.style('font-size', '20px');
 
 
-  var button_opponent_less = createButton('Lower');
+  button_opponent_less = createButton('Lower');
   var opponent_button_col = color(255, 105, 180, 50);
   button_opponent_less.position(610, 50);
   button_opponent_less.mousePressed(opponentPickLower);
   button_opponent_less.style('font-size', '19px');
   button_opponent_less.style('background-color', opponent_button_col);
 
-  var button_opponent_more = createButton('Higher');
+  button_opponent_more = createButton('Higher');
   button_opponent_more.position(700, 50);
   button_opponent_more.mousePressed(opponentPickHigher);
   button_opponent_more.style('font-size', '19px');
@@ -64,6 +64,7 @@ function setup() {
 
 function resetGame() {
   initial_indicator_position = Math.round(random(-1, max_slots-1));
+  slider.value(-179);
   less_alpha = 50;
   more_alpha = 50;
 }
@@ -111,7 +112,7 @@ function draw() {
   drawWords(current_left_word, current_right_word);
 
   var dial_length = 280;
-  let angle = slider.value();
+  var angle = slider.value();
   drawDial(dial_length, angle);
   drawOpponentsPick(less_alpha, more_alpha);
 
@@ -436,8 +437,8 @@ function randomNewClue() {
         "right": "90s"
     },
     {
-        "left": "Danger job",
-        "right": "Safe job"
+        "left": "risky job",
+        "right": "safe job"
     },
     {
         "left": "smells bad",
@@ -500,20 +501,24 @@ function randomNewClue() {
         "right": "overrated"
     },
     {
-        "left": "unpopular",
-        "right": "popular"
+        "left": "niche",
+        "right": "mainstream"
     },
     {
-        "left": "bad ice-cream toppings",
-        "right": "good ice-cream toppings"
+        "left": "bad ice-cream topping",
+        "right": "good ice-cream topping"
     },
     {
-        "left": "bad pizza toppings",
-        "right": "good pizza toppings"
+        "left": "bad pizza topping",
+        "right": "good pizza topping"
     },
     {
-        "left": "old-fashion",
-        "right": "contemporary"
+        "left": "an old-fashioned name",
+        "right": "a modern name"
+    },
+    {
+        "left": "conservative",
+        "right": "innovative"
     },
     {
         "left": "salty",
@@ -545,7 +550,7 @@ function randomNewClue() {
     },
     {
         "left": "easy activity",
-        "right": "strenous activity"
+        "right": "strenuous activity"
     },
     {
         "left": "weak",
@@ -630,6 +635,82 @@ function randomNewClue() {
     {
         "left": "unpopular opinion",
         "right": "popular opinion"
+    },
+    {
+        "left": "leisure",
+        "right": "business"
+    },
+    {
+        "left": "awkward",
+        "right": "graceful"
+    },
+    {
+        "left": "careless",
+        "right": "cautious"
+    },
+    {
+        "left": "cruel",
+        "right": "kind"
+    },
+    {
+        "left": "sink",
+        "right": "float"
+    },
+    {
+        "left": "loose",
+        "right": "tight"
+    },
+    {
+        "left": "failure",
+        "right": "masterpiece"
+    },
+    {
+        "left": "miser",
+        "right": "spendthrift"
+    },
+    {
+        "left": "narrow",
+        "right": "broad"
+    },
+    {
+        "left": "south",
+        "right": "north"
+    },
+    {
+        "left": "impatient",
+        "right": "patient"
+    },
+    {
+        "left": "temporary",
+        "right": "permanent"
+    },
+    {
+        "left": "prey",
+        "right": "predator"
+    },
+    {
+        "left": "sweet",
+        "right": "sour"
+    },
+    {
+        "left": "soft",
+        "right": "hard"
+    },
+    {
+        "left": "soft",
+        "right": "hard"
+    },
+    {
+        "left": "vice",
+        "right": "virtue"
+    },
+    {
+        "left": "simple",
+        "right": "complicated"
+    },
+    {
+        "left": "loved",
+        "right": "hated"
     }
   ];
   return wordlist[
