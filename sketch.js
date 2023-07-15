@@ -282,6 +282,7 @@ function keyTyped() {
 }
 
 function randomNewClue() {
+    var wordlist_length = Object.keys(wordlist).length;
     return wordlist[
-        Math.floor(Math.random() * wordlist.length)];
+        Math.floor(Math.random() * wordlist_length)];
 }
