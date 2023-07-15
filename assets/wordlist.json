@@ -176,8 +176,8 @@
         "right": "90s"
     },
     {
-        "left": "Danger job",
-        "right": "Safe job"
+        "left": "risky job",
+        "right": "safe job"
     },
     {
         "left": "smells bad",
@@ -240,20 +240,24 @@
         "right": "overrated"
     },
     {
-        "left": "unpopular",
-        "right": "popular"
+        "left": "niche",
+        "right": "mainstream"
     },
     {
-        "left": "bad ice-cream toppings",
-        "right": "good ice-cream toppings"
+        "left": "bad ice-cream topping",
+        "right": "good ice-cream topping"
     },
     {
-        "left": "bad pizza toppings",
-        "right": "good pizza toppings"
+        "left": "bad pizza topping",
+        "right": "good pizza topping"
     },
     {
-        "left": "old-fashion",
-        "right": "contemporary"
+        "left": "an old-fashioned name",
+        "right": "a modern name"
+    },
+    {
+        "left": "conservative",
+        "right": "innovative"
     },
     {
         "left": "salty",
@@ -285,7 +289,7 @@
     },
     {
         "left": "easy activity",
-        "right": "strenous activity"
+        "right": "strenuous activity"
     },
     {
         "left": "weak",
@@ -370,5 +374,81 @@
     {
         "left": "unpopular opinion",
         "right": "popular opinion"
+    },
+    {
+        "left": "leisure",
+        "right": "business"
+    },
+    {
+        "left": "awkward",
+        "right": "graceful"
+    },
+    {
+        "left": "careless",
+        "right": "cautious"
+    },
+    {
+        "left": "cruel",
+        "right": "kind"
+    },
+    {
+        "left": "sink",
+        "right": "float"
+    },
+    {
+        "left": "loose",
+        "right": "tight"
+    },
+    {
+        "left": "failure",
+        "right": "masterpiece"
+    },
+    {
+        "left": "miser",
+        "right": "spendthrift"
+    },
+    {
+        "left": "narrow",
+        "right": "broad"
+    },
+    {
+        "left": "south",
+        "right": "north"
+    },
+    {
+        "left": "impatient",
+        "right": "patient"
+    },
+    {
+        "left": "temporary",
+        "right": "permanent"
+    },
+    {
+        "left": "prey",
+        "right": "predator"
+    },
+    {
+        "left": "sweet",
+        "right": "sour"
+    },
+    {
+        "left": "soft",
+        "right": "hard"
+    },
+    {
+        "left": "soft",
+        "right": "hard"
+    },
+    {
+        "left": "vice",
+        "right": "virtue"
+    },
+    {
+        "left": "simple",
+        "right": "complicated"
+    },
+    {
+        "left": "loved",
+        "right": "hated"
     }
 ]
