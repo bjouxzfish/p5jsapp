@@ -16,6 +16,7 @@ const textColor = "#D3D3D3";
 // Varia#1A1A1Dbles for category.
 // This is the default category when the game starts.
 let current_category = 'geography';
+let num_questions = 0;
 let category_buttons;
 const categories = ['geography', 'food_and_drink', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
 let questions_by_category;
@@ -25,7 +26,7 @@ const checkedCategoryButtonColor = "#396dd3";
 
 // Initialize variables for questions and answers.
 let questions;
-let question_text = "Click Next Question";
+let question_text = "Click Next Question to Begin";
 let answer_text = "";
 let current_answer;
 
@@ -40,7 +41,6 @@ function preload() {
   }
   // Set the current questions to the default category.
   questions = questions_by_category.get(current_category);
-
 }
 
 
@@ -53,7 +53,7 @@ function setup() {
   displayAnswer(answer_text);
 
   button_reset = createButton('Next Question');
-  button_reset.position(categoryDivWidth + 200, qaButtonY);
+  button_reset.position(categoryDivWidth + 100, qaButtonY);
   button_reset.mousePressed(randomNewQuestion);
   button_reset.style('font-size', buttonFontSize);
 
@@ -86,6 +86,8 @@ function draw() {
   background(appBGColor);
   displayHeader();
   drawCategoryDiv();
+  num_questions = Object.keys(questions).length;
+  displayCategoryStat();
   displayQuestion();
   displayAnswer();
 }
@@ -115,6 +117,7 @@ function setCurrentCategory(value) {
   // console.log(value)
   current_category = value;
   questions = questions_by_category.get(current_category);
+  num_questions = Object.keys(questions).length;
 }
 
 
@@ -145,7 +148,7 @@ function displayHeader() {
   textAlign(CENTER);
   fill("#FEFFFF");
   textStyle(BOLD);
-  text("TRIVIA", categoryDivWidth, headerY, 700, 300);
+  text("TRIVIA", categoryDivWidth, headerY, canvasWidth - categoryDivWidth, 300);
 }
 
 
@@ -171,4 +174,15 @@ function displayAnswer() {
 
 function makeAnswerVisible() {
   answer_text = current_answer;
+}
+
+function displayCategoryStat() {
+  textSize(15);
+  textAlign(CENTER);
+  fill(textColor);
+  textStyle(NORMAL);
+  // Display the question.
+  let stats = ["Category:", current_category, ";", "# of Questions:", num_questions.toString()]
+  text(stats.join(" "), categoryDivWidth, headerY + 60, canvasWidth - categoryDivWidth, 100);
+
 }
