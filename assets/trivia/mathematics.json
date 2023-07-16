@@ -635,5 +635,317 @@
       "Andrew Wiles"
     ],
     "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory states that any sufficiently large even number can be expressed as the sum of two prime numbers?",
+    "answer": 0,
+    "answers": [
+      "Goldbach's Conjecture"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory deals with the arrangement, combination, and permutation of objects?",
+    "answer": 0,
+    "answers": [
+      "Combinatorics"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory involves the study of continuous change and motion?",
+    "answer": 0,
+    "answers": [
+      "Calculus"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory is concerned with solving polynomial equations?",
+    "answer": 0,
+    "answers": [
+      "Algebra"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory studies the properties and relationships of geometric figures in two and three dimensions?",
+    "answer": 0,
+    "answers": [
+      "Euclidean Geometry"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory explores the properties and behaviors of numbers?",
+    "answer": 0,
+    "answers": [
+      "Number Theory"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory focuses on the measurement and properties of shapes and figures?",
+    "answer": 0,
+    "answers": [
+      "Geometry"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory deals with the analysis of data and the interpretation of patterns and trends?",
+    "answer": 0,
+    "answers": [
+      "Statistics"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory studies the behavior and properties of functions and their graphs?",
+    "answer": 0,
+    "answers": [
+      "Function Theory"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory involves the study of systems of linear equations and their solutions?",
+    "answer": 0,
+    "answers": [
+      "Linear Algebra"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory explores the relationship between angles and the sides of triangles?",
+    "answer": 0,
+    "answers": [
+      "Trigonometry"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory studies the properties and behavior of vectors in mathematical spaces?",
+    "answer": 0,
+    "answers": [
+      "Vector Theory"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory involves the study of complex numbers and their properties?",
+    "answer": 0,
+    "answers": [
+      "Complex Analysis"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "What theory focuses on the study of limits, continuity, and infinitesimal calculus?",
+    "answer": 0,
+    "answers": [
+      "Real Analysis"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which theory deals with the analysis of random phenomena and the mathematical modeling of uncertainty?",
+    "answer": 0,
+    "answers": [
+      "Probability Theory"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which mathematician developed the theory of relativity?",
+    "answer": 0,
+    "answers": [
+      "Albert Einstein"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Who is credited with the discovery of calculus?",
+    "answer": 0,
+    "answers": [
+      "Isaac Newton"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Who proposed the famous \"Fermat's Last Theorem\"?",
+    "answer": 0,
+    "answers": [
+      "Pierre de Fermat"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Who introduced the concept of zero and the decimal place system to the Western world?",
+    "answer": 0,
+    "answers": [
+      "Muhammad ibn Musa al-Khwarizmi"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which mathematician is often referred to as the \"Prince of Mathematicians\"?",
+    "answer": 0,
+    "answers": [
+      "Carl Friedrich Gauss"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Who is known for their work on prime numbers and the distribution of prime numbers?",
+    "answer": 0,
+    "answers": [
+      "Bernhard Riemann"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which mathematician is famous for the development of probability theory?",
+    "answer": 0,
+    "answers": [
+      "Blaise Pascal"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Who developed the field of game theory and won the Nobel Prize in Economics?",
+    "answer": 0,
+    "answers": [
+      "John Nash"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Who is known for their work on the mathematical theory of communication, known as \"information theory\"?",
+    "answer": 0,
+    "answers": [
+      "Claude Shannon"
+    ],
+    "source": ""
   }
 ]
