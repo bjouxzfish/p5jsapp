@@ -1,6 +1,6 @@
 var questions;
-let question_text = "Q";
-let answer_text = "ANS";
+let question_text = "Click Next Question";
+let answer_text = "";
 var current_answer;
 
 function preload() {
@@ -13,25 +13,28 @@ function preload() {
 
 function setup() {
   var canvas = createCanvas(800, 500);
+  // Move the canvas so it’s inside our <div id="sketch-holder">.
+  canvas.parent('sketch-holder');
+  textAlign(CENTER);
   displayQuestion();
   displayAnswer(answer_text);
 
   let buttonFontSize = '18px';
 
   button_reset = createButton('Next Question');
-  button_reset.position(30, 100);
+  button_reset.position(200, 100);
   button_reset.mousePressed(randomNewQuestion);
   button_reset.style('font-size', buttonFontSize);
 
   button_ans = createButton('Answer');
-  button_ans.position(200, 100);
+  button_ans.position(400, 100);
   button_ans.mousePressed(makeAnswerVisible);
   button_ans.style('font-size', buttonFontSize);
 
 }
 
 function draw() {
-  background(220);
+  background('#222222');
   displayHeader();
   displayQuestion();
   displayAnswer();
@@ -48,19 +51,18 @@ function randomNewQuestion() {
 
 function displayHeader() {
   textSize(40);
-  // Display the question.
+  fill("#D3D3D3");
   text("TRIVIA", 20, 10, 700, 300);
 }
 
-// Create a function to display a question and the answer choices.
 function displayQuestion() {
-  textSize(20);
+  textSize(30);
   // Display the question.
   text(question_text, 20, 150, 700, 300);
 }
 
 function displayAnswer() {
-  textSize(20);
+  textSize(30);
   // Display the answer.
   text(answer_text, 20, 300, 700, 500);
 }
