@@ -8,13 +8,20 @@ const headerY = 10;
 const qaButtonY = 100;
 const questionY = 150;
 const answerY = 350;
+const buttonFontSize = '20px';
 
-// Variables for category.
+const appBGColor = "#1A1A1D";
+const textColor = "#D3D3D3";
+
+// Varia#1A1A1Dbles for category.
 // This is the default category when the game starts.
 let current_category = 'geography';
 let category_buttons;
 const categories = ['geography', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
 let questions_by_category;
+const categoryDivBGColor = "#292f4d";
+const uncheckedCategoryButtonColor = "";
+const checkedCategoryButtonColor = "#396dd3";
 
 // Initialize variables for questions and answers.
 let questions;
@@ -45,8 +52,6 @@ function setup() {
   displayQuestion();
   displayAnswer(answer_text);
 
-  let buttonFontSize = '18px';
-
   button_reset = createButton('Next Question');
   button_reset.position(categoryDivWidth + 200, qaButtonY);
   button_reset.mousePressed(randomNewQuestion);
@@ -68,6 +73,7 @@ function setup() {
       createButton(category)
         .position(categoryX, 40 * i + 10)
         .style('background-color', "#FFFFFF")
+        .style('font-size', "16px")
         .mousePressed(createCategoryButtonMousePressedFunc(category)));
   }
   // Color the default category button during game initial setup.
@@ -77,7 +83,7 @@ function setup() {
 
 
 function draw() {
-  background('#222222');
+  background(appBGColor);
   displayHeader();
   drawCategoryDiv();
   displayQuestion();
@@ -88,9 +94,9 @@ function draw() {
 // SETTING CATEGORIES
 function drawCategoryDiv() {
 
-  fill("#FAFAFA");
+  fill(categoryDivBGColor);
   rect(0, 0, categoryDivWidth, canvasHeight);
-  fill("#000000");
+  fill(textColor);
   textSize(20);
   textAlign(LEFT);
   text("Category", categoryX, 30);
@@ -115,9 +121,9 @@ function setCurrentCategory(value) {
 function colorSelectedCategoryButton(value) {
   for (let [key, button] of category_buttons) {
     if (key == value) {
-      button.style('background-color', "#FFFF00");
+      button.style('background-color', checkedCategoryButtonColor);
     } else {
-      button.style('background-color', "#FFFFFF")
+      button.style('background-color', uncheckedCategoryButtonColor)
     };
   };
 }
@@ -137,7 +143,8 @@ function randomNewQuestion() {
 function displayHeader() {
   textSize(40);
   textAlign(CENTER);
-  fill("#D3D3D3");
+  fill("#FEFFFF");
+  textStyle(BOLD);
   text("TRIVIA", categoryDivWidth, headerY, 700, 300);
 }
 
@@ -145,7 +152,8 @@ function displayHeader() {
 function displayQuestion() {
   textSize(30);
   textAlign(CENTER);
-  fill("#D3D3D3");
+  fill(textColor);
+  textStyle(NORMAL);
   // Display the question.
   text(question_text, categoryDivWidth, questionY, canvasWidth - categoryDivWidth, 300);
 }
@@ -154,7 +162,8 @@ function displayQuestion() {
 function displayAnswer() {
   textSize(30);
   textAlign(CENTER);
-  fill("#D3D3D3");
+  fill(textColor);
+  textStyle(NORMAL);
   // Display the answer.
   text(answer_text, categoryDivWidth, answerY, canvasWidth - categoryDivWidth, 500);
 }
