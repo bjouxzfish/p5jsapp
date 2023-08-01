@@ -32,7 +32,7 @@ function preload() {
 function setup() {
   var canvas = createCanvas(canvasWidth, canvasHeight);
   // Move the canvas so it’s inside our <div id="sketch-holder">.
-  //canvas.parent('sketch-holder');
+  canvas.parent('sketch-holder');
   textAlign(CENTER);
   displayQuestion();
   displayAnswer(answer_text);
