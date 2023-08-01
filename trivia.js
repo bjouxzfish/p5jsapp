@@ -18,7 +18,7 @@ const textColor = "#D3D3D3";
 let current_category = 'geography';
 let num_questions = 0;
 let category_buttons;
-const categories = ['geography', 'food_and_drink', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
+const categories = ['geography', 'food_and_drink', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature', 'university_challenge'];
 let questions_by_category;
 const categoryDivBGColor = "#313136";
 const uncheckedCategoryButtonColor = "";

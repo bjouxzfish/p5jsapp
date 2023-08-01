@@ -1116,5 +1116,57 @@
       "It is a conjecture in mathematics that states that all the non-trivial zeros of the Riemann zeta function have real part 1/2."
     ],
     "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Linear, quadratic, cubic, and quartic are all names assigned to what class of mathematical expression, based on its highest degree?",
+    "answer": 0,
+    "answers": [
+      "polynomial"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which function of an angle is defined in a right angled triangle by the ratio of the opposite and hypoteneuse sides?",
+    "answer": 0,
+    "answers": [
+      "sine"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "Which function can be defined as modelling a relationship in which a constant change in the independent variable gives the same proportional change in the dependent variable?",
+    "answer": 0,
+    "answers": [
+      "exponential function"
+    ],
+    "source": ""
+  },
+  {
+    "category_id": "MATHEMATICS",
+    "lang": "en",
+    "tags": [
+      "MATHEMATICS"
+    ],
+    "question": "The Dirac delta function of x is defined as being zero at all values of x except zero. What is the value of its integral over all real values of x?",
+    "answer": 0,
+    "answers": [
+      "one"
+    ],
+    "source": ""
   }
 ]
