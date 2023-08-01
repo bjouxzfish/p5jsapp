@@ -2,7 +2,8 @@
 const canvasWidth = 800;
 const canvasHeight = 500;
 
-const categoryDivWidth = 180;
+const categoryDivWidth = 200;
+const categoryX = 10;
 const headerY = 10;
 const qaButtonY = 100;
 const questionY = 150;
@@ -12,7 +13,7 @@ const answerY = 350;
 // This is the default category when the game starts.
 let current_category = 'geography';
 let category_buttons;
-const categories = ['geography', 'history', 'mathematics', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
+const categories = ['geography', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
 let questions_by_category;
 
 // Initialize variables for questions and answers.
@@ -20,7 +21,6 @@ let questions;
 let question_text = "Click Next Question";
 let answer_text = "";
 let current_answer;
-
 
 
 function preload() {
@@ -35,6 +35,7 @@ function preload() {
   questions = questions_by_category.get(current_category);
 
 }
+
 
 function setup() {
   var canvas = createCanvas(canvasWidth, canvasHeight);
@@ -65,7 +66,7 @@ function setup() {
     category = categories[i - 1]
     category_buttons.set(category,
       createButton(category)
-        .position(10, 30 * i)
+        .position(categoryX, 40 * i + 10)
         .style('background-color', "#FFFFFF")
         .mousePressed(createCategoryButtonMousePressedFunc(category)));
   }
@@ -83,8 +84,8 @@ function draw() {
   displayAnswer();
 }
 
-// SETTING CATEGORIES
 
+// SETTING CATEGORIES
 function drawCategoryDiv() {
 
   fill("#FAFAFA");
@@ -92,8 +93,9 @@ function drawCategoryDiv() {
   fill("#000000");
   textSize(20);
   textAlign(LEFT);
-  text("Category", 10, 20);
+  text("Category", categoryX, 30);
 }
+
 
 function createCategoryButtonMousePressedFunc(category_name) {
   return function () {
@@ -102,11 +104,13 @@ function createCategoryButtonMousePressedFunc(category_name) {
   }
 }
 
+
 function setCurrentCategory(value) {
   // console.log(value)
   current_category = value;
   questions = questions_by_category.get(current_category);
 }
+
 
 function colorSelectedCategoryButton(value) {
   for (let [key, button] of category_buttons) {
@@ -129,12 +133,14 @@ function randomNewQuestion() {
   current_answer = current_question.answers[0];
 }
 
+
 function displayHeader() {
   textSize(40);
   textAlign(CENTER);
   fill("#D3D3D3");
   text("TRIVIA", categoryDivWidth, headerY, 700, 300);
 }
+
 
 function displayQuestion() {
   textSize(30);
@@ -144,6 +150,7 @@ function displayQuestion() {
   text(question_text, categoryDivWidth, questionY, canvasWidth - categoryDivWidth, 300);
 }
 
+
 function displayAnswer() {
   textSize(30);
   textAlign(CENTER);
@@ -151,6 +158,7 @@ function displayAnswer() {
   // Display the answer.
   text(answer_text, categoryDivWidth, answerY, canvasWidth - categoryDivWidth, 500);
 }
+
 
 function makeAnswerVisible() {
   answer_text = current_answer;
