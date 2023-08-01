@@ -2275,5 +2275,291 @@
         "answer": 0,
         "answers": "Croissant",
         "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "The Titanic, the Britannic, and which other ship comprised the fleet constructed for the White Star Line between 1911 and 1915? It was named after a town in ancient Greece that housed a statue of Zeus",
+        "answer": 0,
+        "answers": "Olympic",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Douglas is the largest town on which island? Situated between the Ireland and Great Britain, it hosts a famous annual motorbike race.",
+        "answer": 0,
+        "answers": "Isle of Man",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "The Ring Cycle, The Flying Dutchman, and The Tannhauser are all compositions by which controversial German composer?",
+        "answer": 0,
+        "answers": "Richard Wagner",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Sugar syrup, lime juice, soda water, mint, and white rum are the traditional components of which cocktail?",
+        "answer": 0,
+        "answers": "mojito",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Monarch of England and Ireland from 10th to the 19th July 1553, which Protestant ruler was deposed by the Catholic Mary 1st and sentenced to death in 1554?",
+        "answer": 0,
+        "answers": "Lady Jane Grey",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "If a current of 5 Amps flows through a resistor of 2 Ohms, what voltage would be measured across the resistor? I need a number and a unit",
+        "answer": 0,
+        "answers": "10 V",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Tosche Station, the Pit of Carkoon, and Mos Eisley spaceport are all locations on which planet in the Star Wars universe?",
+        "answer": 0,
+        "answers": "Tatooine",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "What is the name of the organelle in plant cells where chlorophyll is stored and so photosynthesis takes place?",
+        "answer": 0,
+        "answers": "chloroplasts",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "\u201cFar Out in the uncharted backwaters of the unfashionable end of the Western Spiral arm of the galaxy lies a small unregarded yellow sun.\u201d is the opening of which 1979 novel by Douglas Adams?",
+        "answer": 0,
+        "answers": "The Hitchhikers Guide to the Galaxy",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "What six letter word is both a verb meaning \u201cto move or swerve about wildly, often downhill\u201d and a noun denoting \u201can individual\u2019s progression through a specific occupational sequence\u201d?",
+        "answer": 0,
+        "answers": "career",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "During the second world war, only three capitals of belligerent European powers were never occupied. For ten points, name two of them.",
+        "answer": 0,
+        "answers": "London, Moscow, Helsinki",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Which city between Milan and Bologna gives its name both to a delicate dry-cured ham and to a hard, dry cheese?",
+        "answer": 0,
+        "answers": "Parma",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Amundsen\u2019s expedition of 1903 to 1906 was the first to make a successful navigation of which sea route, previously sought by Frobisher, Drake, Henry Hudson, and Sir John Franklin?",
+        "answer": 0,
+        "answers": "North West Passage",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "If a crotchet is one, a minim is two, and a semibrieve is four, what is three? I\u2019m looking for a two-word name",
+        "answer": 0,
+        "answers": "a dotted minim",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Northern Lights, The Subtle Knife, and The Amber Spyglass form which trilogy of books by Philip Pullman? It is currently being adapted into a TV series by the BBC and HBO",
+        "answer": 0,
+        "answers": "His Dark Materials",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Queens, Homerton, St Catherines, St Johns, and Kings are all constituent colleges of which British university, founded in 1209?",
+        "answer": 0,
+        "answers": "Cambridge",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Which 1860 novel by Charles Dickens features Pip, Miss Havisham, and Estella, and starts with a graveyard chase?",
+        "answer": 0,
+        "answers": "Great Expectations",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "'Go tell the Spartans, stranger passing by, that here obedient to their laws we lie.' Which ancient battlefield bears this epitaph?",
+        "answer": 0,
+        "answers": "Thermopylae",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Crab, Horsehead, Cat\u2019s Eye, and Helix are all examples of what astronomical object? It shares its name with an educational streaming service.",
+        "answer": 0,
+        "answers": "Nebula",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Who was president of the United States for the First World War and the signing of the treaty of Versailles? He was the inspiration for a fictional pen pal of Edna Krabappel in the Simpsons.",
+        "answer": 0,
+        "answers": "Woodrow Wilson",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "'On Christmas night all Christians sing, To hear the news the angels bring' is the opening line of which carol? It features the name of a historic English county that contains Brighton, Crawley, and Hastings",
+        "answer": 0,
+        "answers": "Sussex",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "The 2003 novel The Kite Runner is primarily set in which country? It describes the rise to power of and the subsequent rule of the country by the Taliban",
+        "answer": 0,
+        "answers": "Afghanistan",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "En passant, castling, and pawn promotion are all rules in what popular tabletop game? Famous players include Gary Kasparov, Magnus Carlsen, and Deep Blue",
+        "answer": 0,
+        "answers": "Chess",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "What is the name of the process used to refine crude oil by separating it into its component parts by heating? The process typically takes place in a column",
+        "answer": 0,
+        "answers": "fractional distillation",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "Edmonton, Calgary, Vancouver, Montreal, and Toronto are the largest cities in which North American country?",
+        "answer": 0,
+        "answers": "Canada",
+        "source": ""
+    },
+    {
+        "category_id": "UNIVERSITY_CHALLENGE",
+        "lang": "en",
+        "tags": [
+            "UNIVERSITY_CHALLENGE"
+        ],
+        "question": "What is the collective name for the gases in group 18 of the periodic table? These gases are highly unreactive and possess low melting points",
+        "answer": 0,
+        "answers": "noble gases",
+        "source": ""
     }
 ]
