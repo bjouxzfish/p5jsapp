@@ -17,9 +17,9 @@ const textColor = "#D3D3D3";
 // This is the default category when the game starts.
 let current_category = 'geography';
 let category_buttons;
-const categories = ['geography', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
+const categories = ['geography', 'food_and_drink', 'history', 'mathematics', 'entertainment', 'people_and_places', 'religion_and_mythology', 'science_and_nature'];
 let questions_by_category;
-const categoryDivBGColor = "#292f4d";
+const categoryDivBGColor = "#313136";
 const uncheckedCategoryButtonColor = "";
 const checkedCategoryButtonColor = "#396dd3";
 
@@ -136,7 +136,7 @@ function randomNewQuestion() {
     Math.floor(Math.random() * q_length)];
   question_text = current_question.question;
   answer_text = "";
-  current_answer = current_question.answers[0];
+  current_answer = current_question.answers.join(", ");
 }
 
 
